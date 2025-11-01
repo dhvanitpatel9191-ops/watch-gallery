@@ -1,0 +1,27 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>
+            Place your order
+        </h2>
+        <form id = "orderform">
+            <label>Product: </label>
+            <select id="product">
+                <option value="">---select-item---</option>
+                <option value="watch1">traditionnelle-$35000</option>
+                <option value="watch2">Patrimony-$23000</option>
+                <option value="watch3">Overseas-$34000</option>
+            </select><br><br>
+            <label>Quantity:</label>
+            <input type="number" id = "quantity" min="1" placeholder="enter quantity"><br><br>
+            <label>Address:</label>
+            <textarea rows="3" id = "delivery" placeholder="enter delivery address"></textarea><br><br>
+            <button type = "submit">Place order</button>
+        </form>
+        <p id = "ordermsg"></p>
+        <script src="script.js"></script>
+    </body>
